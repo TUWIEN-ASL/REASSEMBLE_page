@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+  
+    <meta property="og:title"
+      content="REASSEMBLE: A Multimodal Dataset for Contact-rich Robotic Assembly and Disassembly" />
+    <meta property="og:url" content="https://dsliwowski1.github.io/REASSEMBLE_page/" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+  
+    <title>REASSEMBLE: A Multimodal Dataset for Contact-rich Robotic Assembly and Disassembly</title>
+  
+    <!-- Keep the Google Fonts and academicons as they're external -->
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    
+    <!-- Keep the favicon -->
+    <!-- <link rel="icon" href="figures/icon2.png"> -->
+  
+    <!-- Keep jQuery and Adobe SDK as they're external dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+
+  </head>
+
+<body>
+
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="https://dsliwowski1.github.io">
+          <span class="icon">
+            <i class="fas fa-home"></i>
+          </span>
+        </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More Research
+          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://evm7.github.io/HOI4ABOT_page/">
+              HOI4ABOT
+            </a>
+            <a class="navbar-item" href="https://dsliwowski1.github.io/ConditionNET_page/">
+              ContitionNET
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+  <section class="publication-header">
+    <div class="hero-body">
+      <div class="container is-max-widescreen">
+        <!-- <div class="columns is-centered"> -->
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">REASSEMBLE: A Multimodal Dataset for Contact-rich Robotic Assembly and Disassembly</h1>
+          <div class="is-size-3 publication-authors">
+            Preprint
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="publication-author-block">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><a href="https://dsliwowski1.github.io/" target="_blank">Daniel
+                  Sliwowski</a>,</span>
+              <span class="author-block"><a href="https://shailjadav.github.io/" target="_blank">Shail Jadav</a>,</span>
+              <span class="author-block"><a target="_blank">Sergej Stanovcic</a>,</span>
+              <span class="author-block"><a href="https://orbik.me/" target="_blank">Jedrzej Orbik</a>,</span>
+              <span class="author-block"><a href="https://www.tuwien.at/etit/ict/asl/team/johannes-heidersberger" target="_blank">Johannes Heidersberger</a>,</span>
+              <span class="author-block"><a href="https://www.tuwien.at/etit/ict/asl/team/dongheui-lee"
+                  target="_blank">Dongheui Lee</a>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Technische Universitat Wien (TUWien), German Aerospace Center (DLR)</span>
+            </div>
+
+
+
+            <div class="column has-text-centered">
+              <div class="publication-links"
+                style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+                <!-- arXiv Button -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2502.05086" target="_blank" class="external-link button is-normal is-rounded">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- PDF Link. -->
+                <!--              <span class="link-block">-->
+                <!--                <a href="static/source/ADDHEREPDF.pdf" target="_blank"-->
+                <!--                  class="external-link button is-normal is-rounded">-->
+                <!--                  <span class="icon">-->
+                <!--                    <i class="fas fa-file-pdf"></i>-->
+                <!--                  </span>-->
+                <!--                  <span>Paper</span>-->
+                <!--                </a>-->
+                <!--              </span>-->
+                <!--                            </span>-->
+                <!-- </span> -->
+                <!-- Colab Link. -->
+                <!--              <span class="link-block">-->
+                <!--                <a href="ADD HERE THE CODE" target="_blank"-->
+                <!--                class="external-link button is-normal is-rounded">-->
+                <!--                <span class="icon">-->
+                <!--                  <i class="fab fa-github"></i>-->
+                <!--                </span>-->
+                <!--                <span>Code</span>-->
+                <!--              </a>-->
+                <!--             </span>-->
+
+                <!--              <span class="link-block">-->
+                <!--                <a href="ADD HERE REPLICATE IF NEEDED" target="_blank"-->
+                <!--                class="external-link button is-normal is-rounded">-->
+                <!--                <span class="icon">-->
+                <!--                  <i class="fas fa-rocket"></i>-->
+                <!--                </span>-->
+                <!--                <span>Demo</span>-->
+                <!--              </a>-->
+                <!--              </span>-->
+                <!-- </span> -->
+                <!-- Colab Link. -->
+
+                <span>
+                  <a class="external-link button is-normal is-rounded">
+                    <span class="icon">
+                    <i class="fa fa-database"></i>
+                    </span>
+                    <span>Dataset Coming Soon</span>
+                  </a>
+                  </span>
+
+                <span>
+                  <a class="external-link button is-normal is-rounded">
+                    <span class="icon">
+                    <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code Coming Soon</span>
+                  </a>
+                  </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Robotic manipulation remains a core challenge in robotics, particularly for contact-rich tasks such as industrial assembly and disassembly. Existing datasets have significantly advanced learning in manipulation but are primarily focused on simpler tasks like object rearrangement, falling short of capturing the complexity and physical dynamics involved in assembly and disassembly. To bridge this gap, we present REASSEMBLE (Robotic assEmbly disASSEMBLy datasEt), a new dataset designed specifically for contact-rich manipulation tasks. Built around the NIST Assembly Task Board 1 benchmark, REASSEMBLE includes four actions (pick, insert, remove, and place) involving 17 objects. The dataset contains 4,551 demonstrations, of which 4,035 were successful, spanning a total of 781 minutes. Our dataset features multi-modal sensor data including event cameras, force-torque sensors, microphones, and multi-view RGB cameras. This diverse dataset supports research in areas such as learning contact-rich manipulation, task condition identification, action segmentation, and more. We believe REASSEMBLE will be a valuable resource for advancing robotic manipulation in complex, real-world scenarios.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-widescreen">
+      <div class="hero-body">
+        <div class="container">
+          <div class="item">
+            <div class="column is-centered has-text-centered">
+              <img src="figures/teaser.png" alt="HOI4ABOT"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+  
+          <h2 class="title is-2">Data Visualization</h2>
+  
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-widescreen">
+      <div class="rows">
+        <div class="rows is-centered ">
+            <span style="font-size: 140%">
+              <br>
+              We develop a visualization tool based on the ReRun viewer to display synchronized data from the REASSEMBLE dataset. To improve visualization speed, we downsample the recorded data both spatially (external wrist camera images by a factor of 9, event camera videos by a factor of 4) and temporally (audio by a factor of 2000, proprioceptive data by a factor of 200). Currently, we showcase two samples from the dataset, with plans to expand the selection upon the full dataset’s release. 
+              <b>Click on the gifs to open the visualization app!</b>
+            </span>
+              
+            <div class="column is-centered has-text-centered">
+              <div id="gifGallery"></div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+  
+          <h2 class="title is-2">Experiments</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="section">
+      <div class="container is-max-widescreen">
+          <div class="rows">
+              <div class="rows is-centered ">
+                <div class="row is-full-width">
+                  <h2 class="title is-2"><span class="dvima">Temporal Action Segmentation</span></h2>
+                </div>
+                <span style="font-size: 140%">
+                  <br>
+                  For the benchmarking purposes, we evaluate the performance of a state-of-the-art visual TAS model, DiffAct.
+                  We use the default hyperparameter settings provided for the 50Salads dataset. The performance of DiffAct on the REASSEMBLE dataset is as follows: Accuracy 61.5%, EDIT 47.8%, F1@10 63.3%, F1@25 58.4%, and F1@50 44.1%.
+                  The figure illustrates the TAS performance. In red, we highlight instances where the "Pick" action was not predicted by DiffAct. In blue, we mark areas where similar objects were confused. In this case, DiffAct confused "round peg 1" with "square peg 1" and "square peg 2."
+              </span>
+            </div>
+            <img src="figures/tas.png" class="interpolation-image" alt=""
+            style="display: block; width: 80%; margin-left: auto; margin-right: auto" />
+        </div>   
+          </div>
+      </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-widescreen">
+        <div class="rows">
+            <div class="rows is-centered ">
+              <div class="row is-full-width">
+                <h2 class="title is-2"><span class="dvima">Motion Policy learning</span></h2>
+              </div>
+                <div class="columns">
+                  <div class="column">
+                    <span style="font-size: 140%">
+                        <br>
+                        Based on the demonstrations from the REASSEMBLE dataset we train simple motion policies (Dynamical Movement Primitives) to complete the gear assembly and disassembly tasks.
+                        Each action in the assembly and disassembly was executed 10 times to assess success and failure modes. "Pick" succeeded in 8 trials, failing due to gear slippage. "Insert" had the lowest success rate, with 7 successful trials, mainly failing when the gear remained misaligned after the spiral search. "Remove" succeeded in 8 trials, with failures caused by the gripper grasping the plate instead of the gear due to tracking errors. "Place" was successful in all trials.
+                    </span>
+                  </div>
+                  <div class="column has-text-centered">
+                      <video poster="" id="tree" autoplay controls muted loop height="100%">
+                        <source src="videos/MPL_small.mp4"
+                        type="video/mp4">
+                      </video>
+                  </div>    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-widescreen">
+      <div class="rows">
+          <div class="rows is-centered ">
+            <div class="row is-full-width">
+              <h2 class="title is-2"><span class="dvima">Execution Monitoring</span></h2>
+            </div>
+            <br>
+              <div class="columns">
+                <div class="column has-text-centered">
+                    <video poster="" id="tree" autoplay controls muted loop height="100%">
+                      <source src="videos/AD_small.mp4"
+                      type="video/mp4">
+                    </video>
+                </div>    
+
+                <div class="column">
+                  <span style="font-size: 140%">
+                      <br>
+                      Task execution can fail due to policy generalization issues, perception errors, controller limitations, or human interruptions,
+                      making error detection and recovery essential. To demonstrate anomaly detection using the REASSEMBLE dataset, we develop a execution monitoring 
+                      pipeline based on our previous ConditionNET work. The performance can be seen in the video on the left side.
+                  </span>
+                </div>
+              </div>
+              
+          </div>
+      </div>
+  </div>
+</section>
+
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+    
+            <h2 class="title is-2">Data Collection Setup</h2>
+    
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container is-max-widescreen">
+        <div class="rows">
+          <div class="rows is-centered ">
+              <span style="font-size: 140%">
+                <br>
+                We collect a comprehensive range of sensory data for task demonstrations, including multi-view RGB video from two external HAMA C-600 Pro webcams and a wrist-mounted Intel RealSense D435i, as well as proprioceptive data such as joint positions, velocities, end-effector position, and gripper width. Audio is captured by three microphones, including an OSA K1T wireless mic on the robot's gripper. Interaction forces and torques are measured using a wrist-mounted 6-axis AIDIN ROBOTICS AFT200-D80-C force-torque sensor. The dataset also features an event camera, providing high-speed, low-latency motion information. For precise camera localization, we use a motion capture system with custom 3D-printed brackets and reflective markers on both the cameras and the robot's base.
+              </span>
+                
+              <div class="column is-centered has-text-centered">
+                <img src="figures/sesor_v2-1.png" alt="Data collection setup" />
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+    
+            <h2 class="title is-2">Dataset Statistics</h2>
+    
+            <!-- Scatter plot container
+            <div style="display: flex; justify-content: center; align-items: center;">
+              <div id="scatterPlot"></div>
+            </div> -->
+    
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container is-max-widescreen">
+        <div class="rows">
+          <div class="rows is-centered ">
+              <div class="row is-full-width">
+                  <h2 class="title is-2"><span class="dvima">Action Distribution</span></h2>
+              </div>
+              <span style="font-size: 140%">
+                <br>
+                The REASSEMBLE dataset includes 68 action-object pairs, or 69 with the "Idle" action, covering four actions and 17 objects. To ensure balanced performance, it contains a relatively equal number of demonstrations for each action, with a minimum of 55 for "Remove square peg 2" and a maximum of 86 for "Pick USB" and "Insert BNC." This distribution reduces performance bias toward more frequently occurring actions and supports diverse, balanced learning for downstream models.
+              </span>
+                
+              <div class="column is-centered has-text-centered">
+                <img src="figures/dataset_total.png" alt="Data collection setup" />
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container is-max-widescreen">
+        <div class="rows">
+          <div class="rows is-centered ">
+              <div class="row is-full-width">
+                  <h2 class="title is-2"><span class="dvima">Action Demonstration Success Rate</span></h2>
+              </div>
+              <span style="font-size: 140%">
+                <br>
+                The REASSEMBLE dataset contains demonstrations and labels for both successful and unsuccessful action executions. This allows learning success detectors and implementing execution monitoring pipelines.
+
+                The number of failed demonstrations per action reflects task difficulty, with complex motions leading to more failures. The "Insert" action has the highest failure rate due to its multi-step process, especially for BNC and bolt 4, which require precise alignment and rotation. Ethernet and USB insertions also fail frequently due to their directional plugs and edge placement on the task board. "Pick" failures occur when the gripper misses or drops the object, while "Remove" failures result from misalignment causing objects to jam. In contrast, "Place" has the fewest failures, though slips leading to obstruction are classified as failures.
+              </span>
+                
+              <div class="column is-centered has-text-centered">
+                <img src="figures/dataset_s_vs_us.png" alt="Data collection setup" />
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container is-max-widescreen">
+          <div class="rows">
+              <div class="rows is-centered ">
+                  <div class="row is-full-width">
+                      <h2 class="title is-2"><span class="dvima">Interaction Point Diversity</span></h2>
+                  </div>
+                  <br>
+                  <div class="columns">
+                      <div class="column has-text-centered">
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                          <div id="scatterPlot"></div>
+                        </div>
+                      </div>    
+                  <!-- <br> -->
+                  <div class="column">
+                  <span style="font-size: 140%">
+                      <br>
+                      Increasing the diversity in the interaction points of actions within a dataset enhances generalization and performance on downstream tasks. To achieve high diversity in our data, we instructed the operator to randomize the board and object poses for each trial during data collection. The approximate interaction point of all 4,551 demonstrations was determined by sampling the final end-effector position of each trial. The robot starts at the origin, facing the positive x-axis, with most objects and the board placed in front of the robot within its workspace.
+                  </span>
+              </div>
+                  </div>
+                  
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-widescreen">
+      <div class="rows">
+        <div class="rows is-centered ">
+            <div class="row is-full-width">
+                <h2 class="title is-2"><span class="dvima">Patterns in Force&Torque measurements</span></h2>
+            </div>
+            <span style="font-size: 140%">
+              <br>
+              To identify patterns in force and torque profiles, we normalize each demonstration by its duration, converting it to a "progress domain" where 100% indicates completion. We then resample all demonstrations to 500 samples using linear interpolation and plot the mean force and torque with standard deviations for each action. This allows us to visually analyze trends.
+            </span>
+              
+            <div class="column is-centered has-text-centered">
+              <img src="figures/force_all.png" alt="Data collection setup" />
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+  
+          <h2 class="title is-2">Dataset Structure</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="section">
+      <div class="container is-max-widescreen">
+          <div class="rows">
+              <div class="rows is-centered ">
+                  <div class="columns">
+                    <div class="column">
+                      <span style="font-size: 140%">
+                          <br>
+                          Each trial is stored in a separate H5 file. We preserve the native measurement frequency of each sensor, which allows the user for task-specific synchronization and sampling. To facilitate easy alignment of all messages, we save the timestamps or each sensor reading.
+                      </span>
+                    </div>
+                    <div class="column has-text-centered">
+                      <div style="display: flex; justify-content: center; align-items: center;">
+                        <div id="scatterPlot"></div>
+                      </div>
+                        <img src="figures/structure_full-1.png" class="interpolation-image" alt=""
+                        style="display: block; width: 80%; margin-left: auto; margin-right: auto" />
+                    </div>    
+                  </div>
+                  
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-widescreen">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+        Comming soon
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+              href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+              Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            Website source code based on the <a href="https://nerfies.github.io/"> Nerfies</a> project page. If you
+            want to reuse their <a href="https://github.com/nerfies/nerfies.github.io">source code</a>, please credit
+            them appropriately.
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+  <!-- Add the Vite entry point -->
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>

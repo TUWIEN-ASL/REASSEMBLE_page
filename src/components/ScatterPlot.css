@@ -1,0 +1,100 @@
+:root {
+    /* Plot ranges */
+    --plot-x-min: 0;
+    --plot-x-max: 0.8;
+    --plot-y-min: -0.7;
+    --plot-y-max: 0.7;
+    
+    /* Plot dimensions */
+    --plot-width: 600px;
+    --plot-height: 500px;
+    --plot-aspect-ratio: 1.5;
+    
+    /* Colors */
+    --color-pick: #F79824;
+    --color-insert: #33A1FD;
+    --color-place: #DB5461;
+    --color-remove: #57A773;
+
+    --plot-marker-size: 10;  /* Make sure there's no 'px' unit here */
+}
+  
+  .scatter-plot-container {
+    width: 100%;
+    min-width: var(--plot-width);
+    height: var(--plot-height);
+    border: 1px solid #ddd;
+    margin: 0 auto;
+  }
+  
+  .filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .filter-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .filter-checkbox {
+    margin-right: 0.5rem;
+  }
+  
+  /* Colors for different actions */
+  .action-pick {
+    color: var(--color-pick);
+  }
+  
+  .action-insert {
+    color: var(--color-insert);
+  }
+  
+  .action-place {
+    color: var(--color-place);
+  }
+  
+  .action-remove {
+    color: var(--color-remove);
+  }.scatter-plot-container {
+    width: 100%;
+    min-width: 600px;
+    height: 500px;
+    border: 1px solid #ddd;
+    margin: 0 auto;
+  }
+  
+  .filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .filter-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .filter-checkbox {
+    margin-right: 0.5rem;
+  }
+  
+  /* Colors for different actions */
+  .action-pick {
+    color: #F79824;
+  }
+  
+  .action-insert {
+    color: #33A1FD;
+  }
+  
+  .action-place {
+    color: #DB5461;
+  }
+  
+  .action-remove {
+    color: #57A773;
+  }
