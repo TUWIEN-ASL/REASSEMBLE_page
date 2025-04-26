@@ -28,7 +28,7 @@
 <body>
 
 
-  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <!-- <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
         <span aria-hidden="true"></span>
@@ -60,7 +60,7 @@
       </div>
 
     </div>
-  </nav>
+  </nav> -->
 
   <section class="publication-header">
     <div class="hero-body">
@@ -147,22 +147,22 @@
                 <!-- Colab Link. -->
 
                 <span>
-                  <a class="external-link button is-normal is-rounded">
+                  <a href="https://drive.google.com/drive/u/1/folders/1HPsG63iI2tpovJoh_o2zhmyx9muNcnVx" target="_blank" class="external-link button is-normal is-rounded">
                     <span class="icon">
-                    <i class="fa fa-database"></i>
+                      <i class="fa fa-database"></i>
                     </span>
-                    <span>Dataset Coming Soon</span>
+                    <span>Dataset</span>
                   </a>
-                  </span>
+                </span>
 
                 <span>
-                  <a class="external-link button is-normal is-rounded">
+                  <a href="https://github.com/TUWIEN-ASL/REASSEMBLE" target="_blank" class="external-link button is-normal is-rounded">
                     <span class="icon">
-                    <i class="fab fa-github"></i>
+                      <i class="fab fa-github"></i>
                     </span>
-                    <span>Code Coming Soon</span>
+                    <span>Code</span>
                   </a>
-                  </span>
+                </span>
               </div>
 
             </div>
@@ -224,7 +224,7 @@
         <div class="rows is-centered ">
             <span style="font-size: 140%">
               <br>
-              We develop a visualization tool based on the ReRun viewer to display synchronized data from the REASSEMBLE dataset. To improve visualization speed, we downsample the recorded data both spatially (external wrist camera images by a factor of 9, event camera videos by a factor of 4) and temporally (audio by a factor of 2000, proprioceptive data by a factor of 200). Currently, we showcase two samples from the dataset, with plans to expand the selection upon the full dataset’s release. 
+              We develop a visualization tool based on the ReRun viewer to display synchronized data from the REASSEMBLE dataset. To improve visualization speed, we downsample the recorded data both spatially (external wrist camera images by a factor of 9, event camera videos by a factor of 4) and temporally (audio by a factor of 2000, proprioceptive data by a factor of 200). Currently, we showcase two samples from the dataset. 
               <b>Click on the gifs to open the visualization app!</b>
             </span>
               
@@ -401,6 +401,30 @@
 
     <section class="section">
       <div class="container is-max-widescreen">
+          <div class="rows">
+              <div class="rows is-centered ">
+                <div class="row is-full-width">
+                  <h2 class="title is-2"><span class="dvima">Hierarchical Action Annotations</span></h2>
+                </div>
+                  <div class="columns">
+                    <div class="column">
+                      <span style="font-size: 140%">
+                          <br>
+                          The REASSEMBLE dataset contains annotations on two complexity levels. Actions span longer manipulation tasks like Picking, Insertion, Removing, or Placing. Actions are composed of skills, which encapsulate more primitive motions. REASSEMBLE contains 121 unique skill-object pairs. The plot on the right shows the skill composition of each action.
+                      </span>
+                    </div>
+                    <div class="column has-text-centered">
+                      <img src="figures/Sankey_hier.png" alt="Hierarchical Action Annotations Sankey plot" />
+                    </div>    
+                  </div>
+                  
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <section class="section">
+      <div class="container is-max-widescreen">
         <div class="rows">
           <div class="rows is-centered ">
               <div class="row is-full-width">
@@ -462,7 +486,9 @@
             </span>
               
             <div class="column is-centered has-text-centered">
-              <img src="figures/force_all.png" alt="Data collection setup" />
+              <img src="figures/Insert_WP_new.png" alt="Insert waterproof force plot" />
+              <img src="figures/Place_RP4_new.png" alt="Place Round Peg 4 force plot" />
+              <img src="figures/Remove_SG_new.png" alt="Remove Small Gear force plot" />
             </div>
           </div>
         </div>
@@ -496,7 +522,7 @@
                       <div style="display: flex; justify-content: center; align-items: center;">
                         <div id="scatterPlot"></div>
                       </div>
-                        <img src="figures/structure_full-1.png" class="interpolation-image" alt=""
+                        <img src="figures/structure_v2.png" class="interpolation-image" alt=""
                         style="display: block; width: 80%; margin-left: auto; margin-right: auto" />
                     </div>    
                   </div>
@@ -510,7 +536,15 @@
     <div class="container is-max-widescreen">
       <h2 class="title">BibTeX</h2>
       <pre><code>
-        Comming soon
+        @INPROCEEDINGS{Sliwowski-RSS-25, 
+          AUTHOR    = {Daniel Sliwowski AND Shail Jadav AND Sergej Stanovcic AND Jedrzej Orbik AND Johannes Heidersberger AND Dongheui Lee}, 
+          TITLE     = {{Demonstrating REASSEMBLE: A Multimodal Dataset for Contact-rich Robotic Assembly and Disassembly}}, 
+          BOOKTITLE = {Proceedings of Robotics: Science and Systems}, 
+          YEAR      = {2025}, 
+          ADDRESS   = {Los Angeles, USA}, 
+          MONTH     = {June}, 
+          DOI       = {} 
+        } 
     </div>
   </section>
 
